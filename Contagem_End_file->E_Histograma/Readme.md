@@ -10,32 +10,72 @@ Este programa em Fortran realiza a contagem de arquivos em um diretório especí
 
 Aqui está um exemplo do código em Fortran para realizar a contagem de arquivos e gerar um histograma:
 
-![Exemplo de Histograma](./Contagem_End_file/E_Histograma.png)
+
 
 
 ```fortran
-program contagem_histograma_arquivos
-    implicit none
-    integer :: i, num_files, file_size
-    integer, dimension(100) :: histogram
-    character(len=100) :: filename
+!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!!    Contagem e Histograma
+!!     Gabriel Agosto/2022
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!
+module VG
+integer :: n_linha
+real,allocatable, dimension(:) :: time
+real                           :: medio
 
-    ! Inicializa histograma com zeros
-    histogram = 0
+end module VG
 
-    ! Simulação de contagem de arquivos e geração de histograma
-    num_files = 10  ! Exemplo: número fictício de arquivos
-    do i = 1, num_files
-        ! Suponha que file_size seja o tamanho do arquivo em bytes
-        file_size = 100 * i  ! Exemplo: tamanho fictício do arquivo
-        histogram(file_size) = histogram(file_size) + 1
-    end do
+!!!!!!!!!!!!!!!!!!!!!!!!
 
-    ! Exibir histograma
-    do i = 1, size(histogram)
-        if (histogram(i) > 0) then
-            print *, "Tamanho: ", i, " | Frequência: ", histogram(i)
-        end if
-    end do
+program asd
+use VG
+implicit none
 
-end program contagem_histograma_arquivos
+call contador
+call ler
+
+end program asd
+
+!!!!!!!!!!!!!!!!!!!!!!!!
+
+subroutine contador
+use VG
+implicit none
+integer :: j,i
+
+n_linha=-1
+open (1, file="trpl.txt") 
+  do 
+   n_linha=n_linha+1
+   read(1,*,iostat=j)
+   if(j == -1) exit
+  end do
+write(*,*) n_linha
+close(1)
+
+end subroutine contador
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+subroutine ler
+
+use VG
+call contador 
+
+n_linha=n_linha-1
+
+allocate( time(n_linha))
+ open(2,file="trpl.txt")
+  read(2,*)
+   do i=1,n_linha
+    read(2,*) time(i)
+   end do
+ close(2)
+
+medio=sum(time)/n_linha
+write(*,10) medio
+  
+10 format(E12.6)
+
+end subroutine ler         
