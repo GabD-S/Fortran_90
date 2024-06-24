@@ -38,7 +38,7 @@ Este projeto contém uma implementação da sequência de Fibonacci em Fortran.
 
 Uma abordagem para aproximar o valor de Pi utilizando matrizes e o método de Monte Carlo em Fortran.
 
-🔗 [Pasta Pi com Matrizes](./Numero%20de%20PI(Usando%20Matriz)) - [Clique aqui](./Numero%20de%20PI(Usando%20Matriz)) - [Clique aqui](./Numero%20de%20PI(Usando%20Matriz)) - [Clique aqui](./Numero%20de%20PI(Usando%20Matriz))
+🔗 [Pasta Pi com Matrizes](./Numero%20de%20PI(Usando%20Matriz)) - [Clique aqui](./Numero%20de%20PI(Usando%20Matriz))
 
 ---
 
