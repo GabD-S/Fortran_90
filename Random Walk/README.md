@@ -18,7 +18,7 @@ A imagem abaixo mostra um exemplo de percurso gerado pelo código:
 
 A animação a seguir demonstra o movimento da partícula ao longo do tempo:
 
-![Percurso Animation](./percurso_animation/1.gif)
+![Percurso Animation](./percurso_animation->1.gif)
 
 Nesta animação, é possível observar como a partícula se move aleatoriamente na grade, criando um padrão que reflete o comportamento de um passeio aleatório.
 
