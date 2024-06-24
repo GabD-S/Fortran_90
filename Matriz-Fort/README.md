@@ -12,6 +12,8 @@ Este programa em Fortran demonstra como realizar a multiplicação de matrizes. 
 
 Para utilizar o programa, basta compilar o código-fonte (`multiplicacao_matrizes.f90`) em um compilador Fortran compatível e executar o executável gerado.
 
+![Captura de tela de 2024-06-24 11-09-22](./Captura%20de%20tela%20de%202024-06-24%2011-09-22.png)
+
 ## Resultado da Multiplicação 📊
 
 O resultado da multiplicação das matrizes pode ser visualizado através da exibição do resultado no terminal ou da gravação em um arquivo de saída, dependendo da implementação específica do programa.
