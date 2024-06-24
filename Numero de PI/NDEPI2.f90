@@ -2,7 +2,7 @@ program teste
 implicit none        
 real :: u1,u2,x,xo,y,yo,L,r,ac,a1,a2,ncir2,nt2,v1,v2,v3,v4,erro,pibar,sumxi2,xi2
 integer :: i,ncir,nt,n,nr=10
-do nt= 100, 152222,3
+do nt= 100, 152222,3000
  pibar=0
  sumxi2=0
   do i=1,nr

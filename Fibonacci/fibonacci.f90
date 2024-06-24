@@ -1,6 +1,6 @@
 module vg
-integer :: a,b,c,i
-real :: d,e,f
+integer :: i
+real(8) :: d,e,f,a,b,c
 
 end module vg      
 
@@ -18,12 +18,12 @@ a=1
 c=1
 b=1
 
-do i=1,10
+do i=1,100
  c=a
  a=b
  b= a + c
 
-write(*,*) b
+write(1,*) b,i
 
 end do 
         

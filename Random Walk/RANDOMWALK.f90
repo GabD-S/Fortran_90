@@ -7,7 +7,7 @@
 
 module vava
 
-integer, parameter :: nb=1000
+integer, parameter :: nb=1
 integer,parameter  :: nt=500
 real,dimension(nb,nt) :: matriz
 
@@ -21,7 +21,7 @@ real :: ent1,ent2,ent3
 
 ent1=1.0 
 ent2=1.0 
-ent3=0.5 
+ent3=0.5
 
 call percurso(ent1,ent2,ent3)
 

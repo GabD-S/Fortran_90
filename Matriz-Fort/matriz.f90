@@ -8,7 +8,7 @@ open( unit=1, file= "matriz_1.in")
  do i = 1,5
   do j = 1,5
    call random_number(u)
-    mat_a(i,j)=200*u-100s
+    mat_a(i,j)=200*u-100
     end do
   end do
 write(1,10) mat_a
