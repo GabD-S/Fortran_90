@@ -46,7 +46,7 @@ Uma abordagem para aproximar o valor de Pi utilizando matrizes e o método de Mo
 
 Este projeto aproxima o valor de Pi usando o método de Monte Carlo sem o uso de matrizes, implementado em Fortran.
 
-🔗 [Pasta Pi sem Matrizes](./Numero_de_PI) - [Clique aqui](./Numero_de_PI)
+🔗 [Pasta Pi sem Matrizes](./Numero%20de%20PI) - [Clique aqui](./Numero%20de%20PI)
 
 ---
 
