@@ -12,7 +12,7 @@ Este projeto visa demonstrar como implementar um passeio aleatório em Fortran, 
 
 A imagem abaixo mostra um exemplo de percurso gerado pelo código:
 
-![Percurso Plot](./percurso_plot/1.png)
+![Percurso Plot](./percurso_plot-->1.png)
 
 ## Animação do Movimento 🎥
 
