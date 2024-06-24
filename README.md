@@ -1,47 +1,68 @@
-# 🌟 Random Walk
+# Meu Projeto em Fortran
+
+Bem-vindo ao repositório do meu projeto em Fortran! Aqui estão várias implementações utilizando Fortran.
+
+## Índice
+- [Random Walk](#random-walk)
+- [Fatorial](#fatorial)
+- [Fibonacci](#fibonacci)
+- [Número de PI (Usando Matriz)](#número-de-pi-usando-matriz)
+- [Número de PI](#número-de-pi)
+- [Contagem e Histograma de Arquivos](#contagem-e-histograma-de-arquivos)
+- [README.md](#readmemd)
+
+---
+
+## Random Walk
 
 Um passeio aleatório é uma sequência de passos aleatórios. Este projeto implementa um passeio aleatório em Fortran.
 
-🔗 [Pasta Random Walk](Random Walk) - [Clique aqui](Random Walk)
+🔗 [Pasta Random Walk](./random-walk) - [Clique aqui](./random-walk)
 
 ---
 
-# 🧮 Exemplo de Implementação de Cálculos de Matrizes em Fortran
+## Fatorial
 
-Este projeto demonstra a implementação de cálculos de matrizes utilizando Fortran.
+Implementação do cálculo do fatorial em Fortran.
 
-🔗 [Pasta Cálculos de Matrizes](./calculos-de-matrizes) - [Clique aqui](./calculos-de-matrizes)
+🔗 [Pasta Fatorial](./fatorial) - [Clique aqui](./fatorial)
 
 ---
 
-# 🔢 Fibonacci
+## Fibonacci
 
-Este projeto contém uma implementação da sequência de Fibonacci em Fortran.
+Implementação da sequência de Fibonacci em Fortran.
 
 🔗 [Pasta Fibonacci](./fibonacci) - [Clique aqui](./fibonacci)
 
 ---
 
-# 🔢 Aproximação do Número de Pi usando Matrizes e Método de Monte Carlo em Fortran
+## Número de PI (Usando Matriz)
 
-Uma abordagem para aproximar o valor de Pi utilizando matrizes e o método de Monte Carlo em Fortran.
+Aproximação do número PI utilizando matrizes em Fortran.
 
-🔗 [Pasta Pi com Matrizes](./pi-com-matrizes) - [Clique aqui](./pi-com-matrizes)
-
----
-
-# 🎲 Método de Monte Carlo sem usar Matriz para Aproximar Número de Pi
-
-Este projeto aproxima o valor de Pi usando o método de Monte Carlo sem o uso de matrizes, implementado em Fortran.
-
-🔗 [Pasta Pi sem Matrizes](./pi-sem-matrizes) - [Clique aqui](./pi-sem-matrizes)
+🔗 [Pasta Número de PI (Usando Matriz)](./numero-de-pi-usando-matriz) - [Clique aqui](./numero-de-pi-usando-matriz)
 
 ---
 
-# 📊 Contagem e Histograma de Arquivos usando Fortran
+## Número de PI
 
-Um projeto que conta a frequência de palavras em arquivos e gera histogramas dessas frequências utilizando Fortran.
+Aproximação do número PI sem o uso de matrizes em Fortran.
+
+🔗 [Pasta Número de PI](./numero-de-pi) - [Clique aqui](./numero-de-pi)
+
+---
+
+## Contagem e Histograma de Arquivos
+
+Contagem e histograma de arquivos utilizando Fortran.
 
 🔗 [Pasta Contagem e Histograma](./contagem-e-histograma) - [Clique aqui](./contagem-e-histograma)
+
+---
+
+## README.md
+
+Você já está aqui!
 
 ---
