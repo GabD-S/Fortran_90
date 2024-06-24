@@ -84,4 +84,5 @@ end subroutine SEGUNDO_PROGRAMA
 ```
 ## Resultados
 
-![Aproximação de PI](./Fibonacci.gif)
+![Aproximação de PI](./Captura%20de%20tela%20de%202024-06-23%2020-01-45.png)
+
