@@ -12,7 +12,7 @@ O método de Monte Carlo é aplicado aqui para calcular pi gerando aleatoriament
 
 Aqui está um exemplo do código em Fortran para aproximar o número pi usando o método de Monte Carlo:
 
-![Exemplo de Uso](./Numero%20de%20PI/animated_plot.gif)
+![Aproximação de PI](./animated_plot.gif)
 
 
 ```fortran
