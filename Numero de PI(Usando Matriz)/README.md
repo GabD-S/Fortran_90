@@ -13,32 +13,75 @@ Este programa em Fortran utiliza o método de Monte Carlo para aproximar o valor
 Aqui está um exemplo do código em Fortran para aproximar o número pi usando o método de Monte Carlo:
 
 ```fortran
-program aproximacao_pi
-    implicit none
-    integer, parameter :: num_pontos = 1000000
-    real :: x, y, pi_aprox
-    integer :: i, pontos_dentro_circulo
+!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+!!      Pi com MC
+!!   by: Gabriel-Ago/2022
+!!
+!!!!!!!!!!!!!!!!!!!!!!!!!
 
-    pontos_dentro_circulo = 0
+module variaveis_globais
+  implicit none
+  integer :: i,n, ncir, nt, nr = 1000
+  real :: u1, u2, x, xo, y, yo, L, r, ac, a1, a2, ncir2, nt2, v1, v2, v3, v4, erro, pibar, sumxi2
 
-    ! Gerando pontos aleatórios e contando quantos estão dentro do círculo
-    do i = 1, num_pontos
-        x = random_number()
-        y = random_number()
+  contains
 
-        if (x**2 + y**2 <= 1.0) then
-            pontos_dentro_circulo = pontos_dentro_circulo + 1
-        end if
-    end do
+  subroutine inicializa()
+    pibar = 0
+    sumxi2 = 0
+    xo = 2.0
+    yo = 3.0
+    L = 5.0
+    r = 1.0
+    ncir = 0
+  end subroutine inicializa
+end module variaveis_globais
 
-    ! Calculando a aproximação de pi
-    pi_aprox = 4.0 * real(pontos_dentro_circulo) / real(num_pontos)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+program main
+  use variaveis_globais
+  implicit none
+  call inicializa()
 
-    ! Exibindo o resultado
-    print *, "Aproximação de pi usando Monte Carlo: ", pi_aprox
+  do i = 1, nr
+    call SEGUNDO_PROGRAMA()
+    ac = (L**2) * ncir / nt
+    sumxi2 = sumxi2 + ac**2
+    pibar = pibar + ac
+    write(*,*) 'Área calculada:', ac
+  end do
 
-end program aproximacao_pi
+  write(*,*) 'Média da área:', nt, pibar / nr
+  erro = sqrt(sumxi2 / nr - (pibar / nr)**2)
+  write(*,*) 'Erro:', erro
+end program main
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+subroutine SEGUNDO_PROGRAMA()
+  use variaveis_globais
+  implicit none
+  ncir = 0
+  nt = 100000  ! ou qualquer valor desejado para o número de tentativas
+
+  do n = 1, nt
+    call random_number(u1)
+    call random_number(u2)
+    x = L * u1
+    y = L * u2
+
+    a1 = (x - xo)**2 + (y - yo)**2
+    a2 = r**2
+
+    if (a1 <= a2) then
+      ncir = ncir + 1
+      ! write(1,*) x, y
+    else
+      ! write(2,*) x, y
+    end if
+  end do
+end subroutine SEGUNDO_PROGRAMA
+```
 ## Resultados
 
-![Fibonacci Animation](./Fibonacci.gif)
+![Aproximação de PI](./Fibonacci.gif)
