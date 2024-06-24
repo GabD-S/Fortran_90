@@ -16,6 +16,8 @@ Para utilizar o programa, basta compilar o código-fonte (`multiplicacao_matrize
 
 O resultado da multiplicação das matrizes pode ser visualizado através da exibição do resultado no terminal ou da gravação em um arquivo de saída, dependendo da implementação específica do programa.
 
+![Multiplicação de matriz resultados](./Captura de tela de 2024-06-24 11-09-22.png)
+
 ## Exemplo de Código
 
 Aqui está um exemplo simplificado do código em Fortran para multiplicação de matrizes:
