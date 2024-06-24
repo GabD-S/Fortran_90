@@ -18,7 +18,7 @@ Este projeto demonstra a implementação de cálculos de matrizes utilizando For
 
 Este projeto contém uma implementação da sequência de Fibonacci em Fortran.
 
-🔗 [Pasta Fibonacci](./fibonacci) - [Clique aqui](./fibonacci)
+🔗 [Pasta Fibonacci](./Fibonacci) - [Clique aqui](./Fibonacci)
 
 ---
 
