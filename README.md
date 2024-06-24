@@ -2,7 +2,7 @@
 
 Um passeio aleatório é uma sequência de passos aleatórios. Este projeto implementa um passeio aleatório em Fortran.
 
-🔗 [Pasta Random Walk](./Random-Wal) - [Clique aqui](./Random-Walk)
+🔗 Pasta Random Walk - [Clique aqui](./Random_Walk)
 
 ---
 
