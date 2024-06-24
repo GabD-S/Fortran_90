@@ -14,7 +14,7 @@ Bem-vindo ao repositório do meu projeto de Fortran! Aqui você encontrará impl
 
 Um passeio aleatório é uma sequência de passos aleatórios. Este projeto implementa um passeio aleatório em Fortran.
 
-🔗 [Pasta Random Walk](./Random_Walk_) - [Clique aqui](./Random_Walk_)
+🔗 [Pasta Random Walk](./Random%20Walk) - [Clique aqui](./Random%20Walk)
 
 ---
 
